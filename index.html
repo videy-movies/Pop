@@ -10,6 +10,11 @@
     .active { display:block; }
     video { width:300px; margin:10px; }
     button { padding:10px 20px; margin:10px; cursor:pointer; }
+
+    /* Hilangkan tombol download (browser tertentu) */
+    video::-webkit-media-controls-download-button {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -19,62 +24,76 @@
 <!-- HALAMAN 1 -->
 <div id="page1" class="page active">
   <h2>Halaman 1</h2>
-  <video controls><source src="AB.mp4"></video>
-  <video controls><source src="Ac.mp4"></video>
-  <video controls><source src="Ad.mp4"></video>
-  <video controls><source src="video4.mp4"></video>
-  <video controls><source src="video5.mp4"></video>
-  <video controls><source src="video6.mp4"></video>
-  <video controls><source src="video7.mp4"></video>
-  <video controls><source src="video8.mp4"></video>
-  <video controls><source src="video9.mp4"></video>
-  <video controls><source src="video10.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="AB.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="Ac.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="Ad.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video4.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video5.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video6.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video7.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video8.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video9.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video10.mp4"></video>
 </div>
 
 <!-- HALAMAN 2 -->
 <div id="page2" class="page">
   <h2>Halaman 2</h2>
-  <video controls><source src="video11.mp4"></video>
-  <video controls><source src="video12.mp4"></video>
-  <video controls><source src="video13.mp4"></video>
-  <video controls><source src="video14.mp4"></video>
-  <video controls><source src="video15.mp4"></video>
-  <video controls><source src="video16.mp4"></video>
-  <video controls><source src="video17.mp4"></video>
-  <video controls><source src="video18.mp4"></video>
-  <video controls><source src="video19.mp4"></video>
-  <video controls><source src="video20.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video11.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video12.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video13.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video14.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video15.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video16.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video17.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video18.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video19.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video20.mp4"></video>
 </div>
 
 <!-- HALAMAN 3 -->
 <div id="page3" class="page">
   <h2>Halaman 3</h2>
-  <video controls><source src="video21.mp4"></video>
-  <video controls><source src="video22.mp4"></video>
-  <video controls><source src="video23.mp4"></video>
-  <video controls><source src="video24.mp4"></video>
-  <video controls><source src="video25.mp4"></video>
-  <video controls><source src="video26.mp4"></video>
-  <video controls><source src="video27.mp4"></video>
-  <video controls><source src="video28.mp4"></video>
-  <video controls><source src="video29.mp4"></video>
-  <video controls><source src="video30.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video21.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video22.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video23.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video24.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video25.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video26.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video27.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video28.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video29.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video30.mp4"></video>
 </div>
 
 <!-- HALAMAN 4 -->
 <div id="page4" class="page">
   <h2>Halaman 4</h2>
-  <video controls><source src="video31.mp4"></video>
-  <video controls><source src="video32.mp4"></video>
-  <video controls><source src="video33.mp4"></video>
-  <video controls><source src="video34.mp4"></video>
-  <video controls><source src="video35.mp4"></video>
-  <video controls><source src="video36.mp4"></video>
-  <video controls><source src="video37.mp4"></video>
-  <video controls><source src="video38.mp4"></video>
-  <video controls><source src="video39.mp4"></video>
-  <video controls><source src="video40.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video31.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video32.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video33.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video34.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video35.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video36.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video37.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video38.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video39.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video40.mp4"></video>
 </div>
+  <!-- HALAMAN 5 -->
+<div id="page4" class="page">
+  <h2>Halaman 5</h2>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video31.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video32.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video33.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video34.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video35.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video36.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video37.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video38.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video39.mp4"></video>
+  <video controls controlsList="nodownload" oncontextmenu="return false;"><source src="video40.mp4"></video>
+ </div>
 
 <!-- TOMBOL -->
 <button onclick="prevPage()">⬅ Sebelumnya</button>
@@ -125,10 +144,8 @@ function prevPage() {
   }
 }
 </script>
+
 <script src="https://rungbeacon.com/ac/cd/19/accd19456467f32573107aa43783b50a.js"></script>
-
-
-
 
 </body>
 </html>
