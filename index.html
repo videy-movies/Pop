@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video MP4 4 Halam</title>
+  <style>
+    body { background:black; color:white; font-family:Arial; text-align:center; }
+    .page { display:none; }
+    .active { display:block; }
+    video { width:300px; margin:10px; }
+    button { padding:10px 20px; margin:10px; cursor:pointer; }
+  </style>
+</head>
+<body>
+
+<h1>Video MP4 (40 Video)</h1>
+
+<!-- HALAMAN 1 -->
+<div id="page1" class="page active">
+  <h2>Halaman 1</h2>
+  <video controls><source src="video1.mp4"></video>
+  <video controls><source src="video2.mp4"></video>
+  <video controls><source src="video3.mp4"></video>
+  <video controls><source src="video4.mp4"></video>
+  <video controls><source src="video5.mp4"></video>
+  <video controls><source src="video6.mp4"></video>
+  <video controls><source src="video7.mp4"></video>
+  <video controls><source src="video8.mp4"></video>
+  <video controls><source src="video9.mp4"></video>
+  <video controls><source src="video10.mp4"></video>
+</div>
+
+<!-- HALAMAN 2 -->
+<div id="page2" class="page">
+  <h2>Halaman 2</h2>
+  <video controls><source src="video11.mp4"></video>
+  <video controls><source src="video12.mp4"></video>
+  <video controls><source src="video13.mp4"></video>
+  <video controls><source src="video14.mp4"></video>
+  <video controls><source src="video15.mp4"></video>
+  <video controls><source src="video16.mp4"></video>
+  <video controls><source src="video17.mp4"></video>
+  <video controls><source src="video18.mp4"></video>
+  <video controls><source src="video19.mp4"></video>
+  <video controls><source src="video20.mp4"></video>
+</div>
+
+<!-- HALAMAN 3 -->
+<div id="page3" class="page">
+  <h2>Halaman 3</h2>
+  <video controls><source src="video21.mp4"></video>
+  <video controls><source src="video22.mp4"></video>
+  <video controls><source src="video23.mp4"></video>
+  <video controls><source src="video24.mp4"></video>
+  <video controls><source src="video25.mp4"></video>
+  <video controls><source src="video26.mp4"></video>
+  <video controls><source src="video27.mp4"></video>
+  <video controls><source src="video28.mp4"></video>
+  <video controls><source src="video29.mp4"></video>
+  <video controls><source src="video30.mp4"></video>
+</div>
+
+<!-- HALAMAN 4 -->
+<div id="page4" class="page">
+  <h2>Halaman 4</h2>
+  <video controls><source src="video31.mp4"></video>
+  <video controls><source src="video32.mp4"></video>
+  <video controls><source src="video33.mp4"></video>
+  <video controls><source src="video34.mp4"></video>
+  <video controls><source src="video35.mp4"></video>
+  <video controls><source src="video36.mp4"></video>
+  <video controls><source src="video37.mp4"></video>
+  <video controls><source src="video38.mp4"></video>
+  <video controls><source src="video39.mp4"></video>
+  <video controls><source src="video40.mp4"></video>
+</div>
+
+<!-- TOMBOL -->
+<button onclick="prevPage()">⬅ Sebelumnya</button>
+<button onclick="nextPage()">Selanjutnya ➡</button>
+
+<script>
+// IKLAN
+let firstClickDone = false;
+let lastAdTime = 0;
+
+function showAd() {
+  const now = Date.now();
+
+  if (!firstClickDone) {
+    window.open("https://rungbeacon.com/pihwy18d?key=b11979058384d9a9aa9cb5871faa888d", "_blank");
+    firstClickDone = true;
+    lastAdTime = now;
+    return;
+  }
+
+  if (now - lastAdTime >= 3000) {
+    window.open("https://rungbeacon.com/pihwy18d?key=b11979058384d9a9aa9cb5871faa888d", "_blank");
+    lastAdTime = now;
+  }
+}
+
+let currentPage = 1;
+const totalPages = 4;
+
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page' + page).classList.add('active');
+}
+
+function nextPage() {
+  showAd();
+  if (currentPage < totalPages) {
+    currentPage++;
+    showPage(currentPage);
+  }
+}
+
+function prevPage() {
+  showAd();
+  if (currentPage > 1) {
+    currentPage--;
+    showPage(currentPage);
+  }
+}
+</script>
+<script src="https://rungbeacon.com/ac/cd/19/accd19456467f32573107aa43783b50a.js"></script>
+
+
+
+
+</body>
+</html>
